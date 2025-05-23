@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
+
 const { width, height } = Dimensions.get('window');
 
 const isSmallScreen = width <= 350 && height <= 600;
@@ -44,10 +45,7 @@ export default function HomeScreen() {
       {/* Pony Character */}
       <View style={styles.ponyWrapper}>
         <Image
-          source={{
-            uri:
-              'https://i.ibb.co/60DLfcZ/blue-pony.png', // Sample pony image - blue pony with white-purple mane & tail
-          }}
+          source={require('../assets/images/excited-horse-animation.gif')}
           style={styles.pony}
           resizeMode="contain"
         />
@@ -77,7 +75,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
     paddingTop: 40,
-    paddingHorizontal: 10,
     height: isSmallScreen ? 600 : undefined,
     width: isSmallScreen ? 350 : undefined,
   },
@@ -204,7 +201,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 16,
+    marginBottom: 160,
     width: '100%',
   },
   pony: {

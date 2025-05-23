@@ -33,10 +33,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#0a0a0a',
-    alignItems: 'center',
     justifyContent: 'flex-start',
     paddingTop: 40,
-    paddingHorizontal: 10,
     height: isSmallScreen ? 600 : undefined,
     width: isSmallScreen ? 350 : undefined,
   },
